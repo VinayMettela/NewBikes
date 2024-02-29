@@ -1,0 +1,813 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 26, 2024 03:03:26 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@Smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Identify New Bikes</p>
+            <p class="text-sm">
+              <span>3:03:55 PM</span> / <span>00:00:56:852</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Identify New Bikes</h5>
+<span class='badge badge-success'>02.26.2024 3:03:55 PM</span>
+<span class='badge badge-danger'>02.26.2024 3:04:52 PM</span>
+<span class='badge badge-default'>00:00:56:852</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Verifying the New bikes tab in the Home page</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Verifying the New bikes tab in the Home page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Checks whether "New Bikes" is present in the header section</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.PageObjects.BikesObjects.verifyNewBikesdropdown(String)" because "this.bo" is null
+	at com.StepDefinations.BikesData.checks_whether_is_present_in_the_header_section(BikesData.java:55)
+	at ✽.Checks whether "New Bikes" is present in the header section(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:6)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Verifying the dropdown of New Bikes</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Verifying the dropdown of New Bikes</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>When user navigates to the New Bikes</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.PageObjects.BikesObjects.NewBikesdropdownMethod()" because "this.bo" is null
+	at com.StepDefinations.BikesData.user_navigates_to_the_new_bikes(BikesData.java:29)
+	at ✽.user navigates to the New Bikes(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:15)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Checks whether "Upcoming Bikes" is present in the New Bikes dropdown</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Verifying the navigation to the upcomming bikes</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinations.BikesData.user_clicks_on_the_upcomming_bikes()">
+                <span>When user clicks on the Upcomming Bikes</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.PageObjects.BikesObjects.UpcommingbikesMethod()" because "this.bo" is null
+	at com.StepDefinations.BikesData.user_clicks_on_the_upcomming_bikes(BikesData.java:35)
+	at ✽.user clicks on the Upcomming Bikes(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:26)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinations.BikesData.verify_the_navigated_to_the_upcomming_bikes_page()">
+                <span>Then verify the navigated to the Upcomming Bikes page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Verifying the Used cars tab in the Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.verify_is_present_in_the_header_section_of_the_page(java.lang.String)">
+                <span>Then verify "Used Cars" is present in the header section of the page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Verifying the dropdown of Used cars</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.user_navigates_to_the_used_cars_dropdown()">
+                <span>When user navigates to the Used cars dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.checks_whether_the_l_ocation_is_present_in_the_dropdown(java.lang.String)">
+                <span>Then Checks whether The LOcation "Chennai" is present in the  dropdown</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>Verifying the navigation to the Used cars</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.user_clicks_on_the_chennai()">
+                <span>When user clicks on the Chennai</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinations.CarsData.user_should_be_navigated_to_used_cars_tab()">
+                <span>Then User should be navigated to Used cars tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [Used Cars in Chennai - 2754 Second Hand Cars for Sale in Chennai ] but found [Used Cars in Chennai - 2753 Second Hand Cars for Sale in Chennai]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.PageObjects.CarsDataObjects.verifyChennaiNavigation(CarsDataObjects.java:61)
+	at com.StepDefinations.CarsData.user_should_be_navigated_to_used_cars_tab(CarsData.java:57)
+	at ✽.User should be navigated to Used cars tab(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:49)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log fail-bg mr-2">Fail</span>Verifying the login/signup button in zigwheels</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinations.EmailVerification.checks_whether_login_signup_is_present_in_the_zigwheels_tab()">
+                <span>Then Checks whether login/signup is present in the zigwheels tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.PageObjects.EmailVerifactionObjects.loginbuttoncheck()" because "this.obj" is null
+	at com.StepDefinations.EmailVerification.checks_whether_login_signup_is_present_in_the_zigwheels_tab(EmailVerification.java:49)
+	at ✽.Checks whether login/signup is present in the zigwheels tab(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:54)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>Navigating to the login/register tab</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.StepDefinations.CarsData.the_user_should_be_on_the_zigwheels_com_website_home_page()">
+                <span>Given The user should be on the zigwheels.com website Home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.StepDefinations.EmailVerification.user_click_on_the_login_tab()">
+                <span>When user click on the login tab</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.PageObjects.EmailVerifactionObjects.loginbuttonMethod()" because "this.obj" is null
+	at com.StepDefinations.EmailVerification.user_click_on_the_login_tab(EmailVerification.java:28)
+	at ✽.user click on the login tab(file:///C:/Users/2304126/eclipse-workspace/HackthonProject/./Features/smoke.feature:59)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.StepDefinations.EmailVerification.user_should_be_navigated_to_login_register_tab()">
+                <span>Then User should be navigated to login/register tab</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Then Checks whether "New Bikes" is present in the header section</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the New bikes tab in the Home page.Then Checks whether "New Bikes" is present in the header section</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>When user navigates to the New Bikes</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the dropdown of New Bikes.When user navigates to the New Bikes</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>When user clicks on the Upcomming Bikes</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the navigation to the upcomming bikes.When user clicks on the Upcomming Bikes</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Then Checks whether login/signup is present in the zigwheels tab</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the login/signup button in zigwheels.Then Checks whether login/signup is present in the zigwheels tab</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>When user click on the login tab</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Navigating to the login/register tab.When user click on the login tab</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='25'>Then User should be navigated to Used cars tab</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the navigation to the Used cars.Then User should be navigated to Used cars tab</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Verifying the Used cars tab in the Home page</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the Used cars tab in the Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Verifying the New bikes tab in the Home page</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the New bikes tab in the Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Verifying the dropdown of New Bikes</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the dropdown of New Bikes</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:03:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Verifying the navigation to the upcomming bikes</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the navigation to the upcomming bikes</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Verifying the dropdown of Used cars</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the dropdown of Used cars</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Verifying the navigation to the Used cars</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the navigation to the Used cars</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Verifying the login/signup button in zigwheels</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Verifying the login/signup button in zigwheels</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:04:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Navigating to the login/register tab</a>
+<div class="">
+<span class="badge badge-default">Identify New Bikes.Navigating to the login/register tab</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 26, 2024 03:03:26 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 26, 2024 03:04:52 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='75%'><b>6</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='57%'><b>12</b> steps passed</small></div>
+<div>
+<small data-tooltip='28%'><b>6</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Identify New Bikes":56.852
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>1</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>14.286%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 6,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 12,
+failGrandChild: 6,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
